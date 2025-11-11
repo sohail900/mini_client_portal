@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
       throw new Error("Missing required fields");
 
     const emailResponse = await resend.emails.send({
-      from: "Accountancy Portal <onboarding@resend.dev>",
+      from: "Client Portal <onboarding@resend.dev>",
       to: email,
       subject: "Welcome to Our Accountancy Services!",
       html: `
